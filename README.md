@@ -1,4 +1,4 @@
-# To be or not to be
+# To be, or not to be
 
 This project is a part of course EECS731. In this project we will build classification models and also feature engineering which would help the data set to establish additional value using exploratory data analysis.
 
@@ -213,6 +213,7 @@ ax.set(xlabel='Number of Players', ylabel='Play Name')
 plt.show()
 ```
 
+### Below plot shows number of players per play
 
 ![png](reports/output_5_0.png)
 
@@ -434,7 +435,7 @@ ax= sns.barplot(x='Lines',y='Play',data=play_data, order = play_data['Play'])
 ax.set(xlabel='Number of Lines', ylabel='Play Name')
 plt.show()
 ```
-
+### Below plot shows Number of lines per player in each play
 
 ![png](reports/output_7_0.png)
 
