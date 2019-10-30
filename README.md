@@ -855,7 +855,7 @@ df.head()
 </table>
 </div>
 
-#### Encoding
+## Encoding
 
 
 ```python
@@ -1024,7 +1024,9 @@ df.head()
 </div>
 
 
-#### Text representation
+## Text representation
+
+#### TF-IDF vectorization
 
 ```python
 #Vectorizing Player line using tfidf
@@ -1053,6 +1055,9 @@ print(features_train.shape)
 
 
 ```python
+
+## Train - test split
+
 #Spliting the dataset to form train and test sets
 vecdf = pd.DataFrame(features_train) 
 vecdf['Playcode'] = df['Play_code']
