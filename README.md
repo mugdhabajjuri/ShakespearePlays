@@ -1,3 +1,29 @@
+# To be or not to be
+
+This project is a part of course EECS731. In this project we will build classification models and also feature engineering which would help the data set to establish additional value using exploratory data analysis.
+
+This project structure is cloned from [Cookiecutter](https://drivendata.github.io/cookiecutter-data-science/)
+
+
+Steps followed are :
+   - Installing cookiecutter. Run the command 
+    
+    pip install cookiecutter
+   - Then, run the below command from terminal to load the project structure
+
+    cookiecutter https://github.com/drivendata/cookiecutter-data-science
+
+Dataset considered here is **"Shakespeare play data"**
+
+Path to Shakespeare data --> /data/external/Shakespeare_data.csv
+
+Raw data collected from :-
+
+  - Shakespeare_data.csv is taken from [here](https://www.kaggle.com/kingburrito666/shakespeare-plays) - Kaggle
+
+
+## Data exploration and Basic Hygiene :
+    
 ```python
 import pandas as pd
 import numpy as np
@@ -12,22 +38,6 @@ df.head()
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -117,22 +127,6 @@ df.head(5)
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -220,7 +214,7 @@ plt.show()
 ```
 
 
-![png](output_5_0.png)
+![png](reports/output_5_0.png)
 
 
 
@@ -237,20 +231,7 @@ play_data
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -455,7 +436,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](reports/output_7_0.png)
 
 
 
@@ -469,20 +450,6 @@ lines_per_player
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -549,7 +516,7 @@ lines_per_player
 <p>1328 rows × 1 columns</p>
 </div>
 
-
+## Feature Engineering
 
 
 ```python
@@ -704,21 +671,6 @@ df.head(5)
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -831,21 +783,6 @@ df.head()
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -990,21 +927,6 @@ df.head()
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
