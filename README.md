@@ -1052,11 +1052,11 @@ print(features_train.shape)
 
     (111396, 100)
 
-
+## Train - test split
 
 ```python
 
-## Train - test split
+
 
 #Spliting the dataset to form train and test sets
 vecdf = pd.DataFrame(features_train) 
@@ -1074,7 +1074,7 @@ print (X_test.shape, y_test.shape)
     (89116, 103) (89116,)
     (22280, 103) (22280,)
 
-
+## Decision Tree Classifier
 
 ```python
 from sklearn.tree import DecisionTreeClassifier # Import Decision Tree Classifier
@@ -1090,10 +1090,12 @@ print('Accuracy of Decision Tree classifier on test set: {:.2f}'
      .format(clf.score(X_test, y_test)))
 ```
 
+#### Accuracy
+
     Accuracy of Decision Tree classifier on training set: 0.99
     Accuracy of Decision Tree classifier on test set: 0.72
 
-
+## K Neighbors Classifier
 
 ```python
 from sklearn.neighbors import KNeighborsClassifier
@@ -1105,10 +1107,12 @@ print('Accuracy of K-NN classifier on test set: {:.2f}'
      .format(knn.score(X_test, y_test)))
 ```
 
+#### Accuracy
+
     Accuracy of K-NN classifier on training set: 0.78
     Accuracy of K-NN classifier on test set: 0.61
 
-
+## Gaussian Naive Bayes Classifier
 
 ```python
 from sklearn.naive_bayes import GaussianNB
@@ -1119,11 +1123,12 @@ print('Accuracy of Naive bayes classifier on training set: {:.2f}'
 print('Accuracy of Naive bayes classifier on test set: {:.2f}'
      .format(knn.score(X_test, y_test)))
 ```
+#### Accuracy
 
     Accuracy of Naive bayes classifier on training set: 0.78
     Accuracy of Naive bayes classifier on test set: 0.61
 
-
+## Count Vectorization
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
@@ -1157,6 +1162,7 @@ print (xTest1.shape, yTest1.shape)
     (22280, 6617) (22280,)
 
 
+## Decision Tree Classifier (with Count Vectorization)
 
 ```python
 from sklearn.tree import DecisionTreeClassifier # Import Decision Tree Classifier
@@ -1170,6 +1176,8 @@ print('Accuracy of Decision Tree classifier on training set: {:.2f}'
 print('Accuracy of Decision Tree classifier on test set: {:.2f}'
      .format(clf.score(xTest1, yTest1)))
 ```
+
+#### Accuracy
 
     Accuracy of Decision Tree classifier on training set: 1.00
     Accuracy of Decision Tree classifier on test set: 0.70
