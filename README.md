@@ -531,13 +531,13 @@ df.loc[1]['PlayerLine']
     'SCENE I. London. The palace.'
 
 
-&& Below we are converting all the text into lower case
+#### Below we are converting all the text into lower case
 
 ```python
 #Lower casing the text
 df['PlayerLine_parsed'] = df['PlayerLine'].str.lower()
 ```
-
+#### Removing the punctuations
 
 ```python
 #getting rid of punctuations
@@ -547,13 +547,14 @@ df['PlayerLine_parsed_2'] = df['PlayerLine_parsed']
 for punct_sign in punctuation_signs:
     df['PlayerLine_parsed_2'] = df['PlayerLine_parsed_2'].str.replace(punct_sign, '')
 ```
-
+#### Removing possessive pronoun terminations
 
 ```python
 #remove possessive pronoun terminations
 df['PlayerLine_parsed_3'] = df['PlayerLine_parsed_2'].str.replace("'s", "")
 ```
 
+#### Lemmitization - Lemmatization is the process of grouping together the different inflected forms of a word so they can be analysed as a single item.
 
 ```python
 #Lemmitization
@@ -617,6 +618,7 @@ for row in range(0, nrows):
 df['PlayerLine_parsed_4'] = lemmatized_text_list
 ```
 
+####  Removing stop words. stop words are commonly used words, which can be ignored
 
 ```python
 #stop words
@@ -777,6 +779,7 @@ df.drop(to_drop, inplace=True, axis=1)
 df = df.rename(columns={'PlayerLine_parsed_5': 'PlayerLine_parsed'})
 ```
 
+#### Final cleaned table
 
 ```python
 df.head()
@@ -852,7 +855,7 @@ df.head()
 </table>
 </div>
 
-
+#### Encoding
 
 
 ```python
@@ -1021,7 +1024,7 @@ df.head()
 </div>
 
 
-
+#### Text representation
 
 ```python
 #Vectorizing Player line using tfidf
