@@ -1187,3 +1187,5 @@ print('Accuracy of Decision Tree classifier on test set: {:.2f}'
 ```python
 
 ```
+
+To conclude, we are getting more accuracy when using the classifier model Decision tree where data representation is done by TF-IDF.
