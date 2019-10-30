@@ -435,7 +435,7 @@ ax= sns.barplot(x='Lines',y='Play',data=play_data, order = play_data['Play'])
 ax.set(xlabel='Number of Lines', ylabel='Play Name')
 plt.show()
 ```
-### Below plot shows Number of lines per player in each play
+### Below plot shows Number of lines in each play
 
 ![png](reports/output_7_0.png)
 
@@ -449,7 +449,7 @@ lines_per_player
 ```
 
 
-
+### Below is the data of number of lines spoken per player in each play
 
 <table border="1" class="dataframe">
   <thead>
@@ -531,7 +531,7 @@ df.loc[1]['PlayerLine']
     'SCENE I. London. The palace.'
 
 
-
+&& Below we are converting all the text into lower case
 
 ```python
 #Lower casing the text
